@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PyLibHub</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="PyLibHub Logo">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#browse">Browse Libraries</a></li>
+                <li><a href="#add-library">Add Library</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+ <!-- Main Section -->
+ <section id="home">
+    <div class="content-center">
+        <h1 class="word-animate">
+            Welcome to <img src="logo.png" alt="PyLibHub Logo" class="logo">
+        </h1>
+        
+        <p>Your central hub for Python libraries!</p><br>
+
+        <div id="trending-libraries">
+            <h2>Today's Library Feature</h2>
+            
+            <!-- Library Card inside Bash box -->
+            <div class="bash-box">
+                <div class="library-card">
+                    <h3>Library of the Day: TensorFlow</h3>
+                    <p>A powerful open-source library for machine learning and deep learning.</p>
+                    <p><strong>Installation:</strong></p>
+                    <p class="bash-code">pip install tensorflow</p>
+                    <button class="copy-btn" onclick="copyToClipboard('pip install tensorflow')">Copy Installation Command</button>
+                </div>
+            </div>
+
+            <!-- Button to Know About New Libraries -->
+            <button id="discover-libraries" class="discover-button">🔍 Discover New Libraries</button>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Copy function to copy the installation command to clipboard
+    function copyToClipboard(command) {
+        const tempInput = document.createElement('input');
+        tempInput.value = command;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempInput);
+        
+        // Provide feedback to the user
+        alert('Installation command copied to clipboard!');
+    }
+</script>
+
+    
+    <!-- Cursor -->
+    <div id="cursor"></div>
+    
+
+    <section id="browse">
+        <h2>Browse Libraries</h2>
+        <div id="category-buttons" data-aos="slide-left" data-aos-duration="1500">
+            <button onclick="filterLibraries('gaming')" data-aos="fade-up" data-aos-delay="100">Gaming</button>
+            <button onclick="filterLibraries('machine-learning')" data-aos="fade-up" data-aos-delay="200">Machine Learning</button>
+            <button onclick="filterLibraries('data-science')" data-aos="fade-up" data-aos-delay="300">Data Science</button>
+            <button onclick="filterLibraries('web-development')" data-aos="fade-up" data-aos-delay="400">Web Development</button>
+            <button onclick="filterLibraries('machine-learning-deep-learning')" data-aos="fade-up" data-aos-delay="500">Deep Learning</button>
+            <button onclick="filterLibraries('data-visualization-reporting')" data-aos="fade-up" data-aos-delay="600">Data Visualization</button>
+            <button onclick="filterLibraries('natural-language-processing-nlp')" data-aos="fade-up" data-aos-delay="700">NLP</button>
+            <button onclick="filterLibraries('automation-scripting')" data-aos="fade-up" data-aos-delay="800">Automation Scripting</button>
+            <button onclick="filterLibraries('testing-debugging')" data-aos="fade-up" data-aos-delay="900">Testing-Debugging</button>
+            <button onclick="filterLibraries('cloud-deployment')" data-aos="fade-up" data-aos-delay="1000">Cloud Development</button>
+            <button onclick="filterLibraries('data-storage-databases')" data-aos="fade-up" data-aos-delay="1100">Data Storage Databases</button>
+            <button onclick="filterLibraries('computer-vision')" data-aos="fade-up" data-aos-delay="1200">Computer Vision</button>
+            <button onclick="filterLibraries('security-cryptography')" data-aos="fade-up" data-aos-delay="1300">Security</button>
+            <button onclick="filterLibraries('system-utilities')" data-aos="fade-up" data-aos-delay="1400">System Utilities</button>
+            <button onclick="filterLibraries('miscellaneous')" data-aos="fade-up" data-aos-delay="1500">Miscellaneous</button>
+        </div>
+    
+        <input type="search" id="search-bar" placeholder="Search for a library...">
+        <button id="search-button">Search</button>
+        <div id="libraries-list" class="carousel">
+            <!-- Dynamically added libraries will appear here -->
+        </div>
+    
+        <div id="libraries-list" class="carousel" data-aos="fade-up" data-aos-duration="600">
+            <!-- Dynamically added libraries will appear here -->
+        </div>
+    
+        <!-- Carousel Controls -->
+        <button id="prev" onclick="scrollCarousel('left')">←</button>
+        <button id="next" onclick="scrollCarousel('right')">→</button>
+    </section>
+    
+
+
+
+   
+
+   <!-- Add Library -->
+<section id="add-library">
+    <h2>Got a Python Library? Don’t Keep It a Secret! 🤫</h2>
+    <p>We know you have an amazing library hiding somewhere... Time to show it off to the world! 🚀💥</p>
+    <form id="library-form">
+        <input type="text" placeholder="What’s the name of your glorious creation?" id="lib-name" required>
+        <textarea placeholder="Tell us why this library is basically magic ✨" id="lib-description" required></textarea>
+        <button type="submit">Send It to the Stars! 🌟</button>
+    </form>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" style="color: white;">
+        <h2>About PyLibHub</h2>
+        <p>Welcome to PyLibHub! The place where Python libraries go to party! 🎉 Whether you're a beginner or a seasoned Pythonista, we have all the libraries you never knew you needed (and some you might not even want)! Explore, share, and rate your favorite libraries – because why not make your coding life a little more interesting?</p>
+        <p>Made with 💻, caffeine, and a dash of chaos by Daksh Mishra. If you're reading this, I probably need more coffee. ☕</p>
+    </section>
+    
+
+
+    <section id="contact" style="color: white;">
+        <h2>Contact</h2>
+        <p>Have feedback? Reach out to me!</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/daksh-mishra-5a036b2b1" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/LinkedIn_Logo_2022.svg" alt="LinkedIn" class="social-icon linkedin-logo">
+            </a>
+            <a href="https://github.com/idaxon" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="social-icon">
+            </a>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

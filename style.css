@@ -1,0 +1,550 @@
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #343a40;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Main Section */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+    height: 1px;
+    
+}
+
+#trending-libraries {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.library-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+}
+
+/* Browse Libraries */
+#browse {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url('https://i.pinimg.com/originals/5b/88/50/5b8850f61f363b9e772bad1aa0d06169.gif');
+    background-size: cover;
+}
+
+#category-buttons {
+    margin-bottom: 20px;
+}
+
+#category-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#category-buttons button:hover {
+    background-color: #138496;
+}
+
+#search-bar {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#libraries-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Add Library */
+#add-library {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url('https://i.pinimg.com/originals/97/62/74/9762742bf3fb86a178e2e521d17a728a.gif');
+    background-size: cover;
+}
+
+#library-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#library-form input, #library-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#library-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#library-form button:hover {
+    background-color: #218838;
+}
+
+/* About & Contact */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url('https://i.makeagif.com/media/5-24-2016/ervLhu.gif');
+    background-size: cover;
+    font-size: xx-large;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h2 {
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.bash-box {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    word-wrap: break-word;
+}
+
+#libraries-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.library-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    
+    border-radius: 8px;
+    width: 390px; /* Adjust width to make it horizontal */
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.library-card:hover {
+    transform: translateY(-10px);
+}
+
+.library-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.library-card p {
+    color: #555;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.bash-box {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-btn {
+    background-color: #2ab44a;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+}
+
+.copy-btn:hover {
+    background-color: #ffffff;
+}
+
+#category-buttons {
+    margin-bottom: 20px;
+}
+
+#category-buttons button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#category-buttons button:hover {
+    background-color: #0056b3;
+}
+
+input[type="search"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Optional: Ensure that the buttons and the container have a smooth transition */
+#category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    opacity: 0; /* Initially hidden */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button[data-aos="fade-up"] {
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Add transition for sliding effect */
+#category-buttons[data-aos="slide-left"] {
+    transform: translateX(-100%);
+    animation: slideInLeft 1.5s forwards;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the top */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center the text */
+    padding-top: 150px; /* Add some padding to the top */
+    height: 500px;
+    background-image: url('https://i.pinimg.com/originals/2c/e2/e0/2ce2e0d8e2eeb0f8bfedf5503a346d4f.gif'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center center; /* Centers the image */
+}
+
+#trending-libraries {
+    display: flex;
+    justify-content: center; /* Center the library cards horizontally */
+    gap: 20px; /* Add space between the cards */
+    margin-top: 10px; /* Slightly move the trending libraries up */
+}
+
+.library-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px; /* Adjust width of each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Word-by-word animation */
+.word-animate {
+    display: inline-block;
+    font-size: 4.1rem;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.word-animate span {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeUpDown 1s forwards;
+    
+}
+
+/* Keyframe for word animation with vertical movement */
+@keyframes fadeUpDown {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start from below */
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-10px); /* Move up */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Settle to final position */
+    }
+}
+
+/* Apply the word animation for each word */
+#home h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: moveUpDown 3s infinite alternate;
+}
+
+/* Keyframes for vertical movement of the title */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Original position */
+    }
+    100% {
+        transform: translateY(-15px); /* Move up a little */
+    }
+}
+
+#home {
+    background-image: url('https://i.pinimg.com/originals/2c/e2/e0/2ce2e0d8e2eeb0f8bfedf5503a346d4f.gif'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white; /* Makes all text in the section white */
+    padding: 100px 0;
+}
+
+
+   
+
+
+.library-card {
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for library cards to make text readable */
+    color: black; /* Text color inside library card */
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.word-animate {
+    display: inline-block;
+    font-size: 3.5rem;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+#trending-libraries {
+    text-align: center;
+}
+
+.discover-button {
+    background-color: #ff7f50; /* A bright color for the button */
+    color: white;
+    font-size: 1.2rem;
+    padding: 20px;
+    border-radius: 50%; /* Makes the button circular */
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    visibility: visible;
+}
+
+.discover-button:hover {
+    transform: scale(1.1); /* Slightly enlarges the button when hovered */
+}
+
+.discover-button:active {
+    transform: scale(0.9); /* Makes the button shrink when clicked */
+}
+
+/* Navbar styling */
+header {
+    position: fixed; /* Keep the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar stays on top of other content */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    background-color: transparent; /* Initially transparent */
+}
+
+/* Navbar links */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+/* Navbar when scrolled */
+.scrolled {
+    background-color: rgb(222, 9, 9); /* Change to black on scroll */
+}
+
+h2 {
+   
+    color: white; /* Ensure the text is visible */
+    padding: 10px; /* Add some padding around the text */
+}
+
+#contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.linkedin-logo {
+    filter: brightness(0) saturate(100%) invert(28%) sepia(83%) saturate(4568%) hue-rotate(169deg) brightness(97%) contrast(97%);
+    width: 40px; /* Set the width as per your design */
+    height: auto; /* Keep the aspect ratio */
+}
+
+.logo img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Keep the aspect ratio */
+}
+.word-animate .logo {
+    width: 350px;  /* Adjust the size of the logo */
+    height: auto;
+    margin-left: 10px;  /* Space between the text and logo */
+    vertical-align: middle;  /* Align the logo vertically with the text */
+}
